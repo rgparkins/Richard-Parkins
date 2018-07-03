@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  pact-consumer-tests:
+    image:  microsoft/dotnet:2.1-sdk
+    container_name: "pact-consumer-tests"
+    volumes:
+      - .:/app
+    environment:
+      - PACT-SERVER=http://localhost
+    working_dir: /app
+    command: dotnet test "./pact-consumer.tests/pact-consumer.tests.csproj"

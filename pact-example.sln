@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pact-service", "pact-service\pact-service.csproj", "{A5330C8B-210B-41F3-8861-6FD8BA70239D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pact-consumer", "pact-consumer\pact-consumer.csproj", "{149DF891-7661-4284-976E-7FB38B1C52F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "domain", "domain\domain.csproj", "{4486B261-E955-4405-B168-D75589CEEF9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pact-consumer.tests", "pact-consumer.tests\pact-consumer.tests.csproj", "{05D47426-F2E7-453E-85C2-28A0EC1BFEB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{9EA50DCA-2EF3-41F0-BBB1-F5FEB3703728}"
+ProjectSection(SolutionItems) = preProject
+	docker-compose.yml = docker-compose.yml
+	docker-compose-tests.yml = docker-compose-tests.yml
+	tests.sh = tests.sh
+EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5330C8B-210B-41F3-8861-6FD8BA70239D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5330C8B-210B-41F3-8861-6FD8BA70239D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5330C8B-210B-41F3-8861-6FD8BA70239D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5330C8B-210B-41F3-8861-6FD8BA70239D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{149DF891-7661-4284-976E-7FB38B1C52F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{149DF891-7661-4284-976E-7FB38B1C52F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{149DF891-7661-4284-976E-7FB38B1C52F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{149DF891-7661-4284-976E-7FB38B1C52F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4486B261-E955-4405-B168-D75589CEEF9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4486B261-E955-4405-B168-D75589CEEF9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4486B261-E955-4405-B168-D75589CEEF9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4486B261-E955-4405-B168-D75589CEEF9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05D47426-F2E7-453E-85C2-28A0EC1BFEB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05D47426-F2E7-453E-85C2-28A0EC1BFEB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05D47426-F2E7-453E-85C2-28A0EC1BFEB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05D47426-F2E7-453E-85C2-28A0EC1BFEB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
