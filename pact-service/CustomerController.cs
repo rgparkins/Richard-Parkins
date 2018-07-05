@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using domain;
 using Microsoft.AspNetCore.Mvc;
 
@@ -31,11 +32,11 @@ namespace pact_service
         }
         
         [HttpPost]
-        public IActionResult Create([FromBody]Customer customer)
+        public async Task<IActionResult> Create([FromBody]Customer customer)
         {
             try
             {
-                var saved = _customers.Add(customer);
+                var saved = await _customers.Add(customer);
 
                 return CreatedAtRoute("Get", new {id = saved.Id}, saved);
             }
