@@ -10,11 +10,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pact-consumer.tests", "pact
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{9EA50DCA-2EF3-41F0-BBB1-F5FEB3703728}"
 ProjectSection(SolutionItems) = preProject
-	docker-compose.yml = docker-compose.yml
-	docker-compose-tests.yml = docker-compose-tests.yml
+	docker-compose-consumer-tests.yml = docker-compose-consumer-tests.yml
 	tests.sh = tests.sh
-	_tests.sh = _tests.sh
+	_tests-service.sh = _tests-service.sh
 	_upload_to_broker.sh = _upload_to_broker.sh
+	_tests-consumer.sh = _tests-consumer.sh
+	docker-compose-service-tests.yml = docker-compose-service-tests.yml
 EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pact-service.tests", "pact-service.tests\pact-service.tests.csproj", "{84470A29-2776-4234-B220-31861F96A5A6}"

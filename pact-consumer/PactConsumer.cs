@@ -40,7 +40,9 @@ namespace pact_consumer
             var result = await client.PostAsync("/customers",
                 new StringContent(JsonConvert.SerializeObject(customer, new JsonSerializerSettings
                 {
-                    ContractResolver = new CamelCasePropertyNamesContractResolver()
+                    ContractResolver = new CamelCasePropertyNamesContractResolver(),
+                    DefaultValueHandling = DefaultValueHandling.Include,
+                    NullValueHandling = NullValueHandling.Ignore
                 }), Encoding.UTF8, "application/json"));
 
             if (result.IsSuccessStatusCode)

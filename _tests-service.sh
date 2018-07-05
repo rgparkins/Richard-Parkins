@@ -12,7 +12,7 @@ cleanup() {
     echo =============================================================================
     echo Shutting down containers...
     
-    docker-compose -f docker-compose-tests.yml down
+    docker-compose -f docker-compose-service-tests.yml down
 }
 
 trap cleanup EXIT
@@ -20,10 +20,8 @@ trap failed ERR
 
 echo
 echo =============================================================================
-echo  Testing Consumer
+echo  Testing Service
 echo =============================================================================
 echo
 
-rm ./pacts/consumer-consumer_api.json
-
-docker-compose -f docker-compose-tests.yml up
+docker-compose -f docker-compose-service-tests.yml up

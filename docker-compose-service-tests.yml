@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  pact-consumer-tests:
+    image:  microsoft/dotnet:2.1-sdk
+    container_name: "pact-service-tests"
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: dotnet test "./pact-service.tests/pact-service.tests.csproj"
