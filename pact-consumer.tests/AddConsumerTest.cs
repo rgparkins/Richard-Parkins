@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using domain;
 using pact_consumer.tests.context;
 using PactNet.Mocks.MockHttpService;
 using PactNet.Mocks.MockHttpService.Models;
@@ -24,7 +25,7 @@ namespace pact_consumer.tests
         {
             //Arrange
             _mockProviderService
-                .Given("There is a something with id 'tester'")
+                .Given("There is a service")
                 .UponReceiving("A POST request to create a customer")
                 .With(new ProviderServiceRequest
                 {
@@ -34,6 +35,11 @@ namespace pact_consumer.tests
                     Headers = new Dictionary<string, object>
                     {
                         { "Content-Type", "application/json; charset=utf-8" }
+                    },
+                    Body = new Customer
+                    {
+                        Firstname = "richard",
+                        Surname = "parkins"
                     }
                 })
                 .WillRespondWith(new ProviderServiceResponse
@@ -41,13 +47,13 @@ namespace pact_consumer.tests
                     Status = 201,
                     Headers = new Dictionary<string, object>
                     {
-                        { "Content-Type", "application/json" }
+                        { "Content-Type", "application/json; charset=utf-8"}
                     },
-                    Body = new 
+                    Body = new Customer
                     {
-                        id = "tester",
-                        firstName = "richard",
-                        surname = "parkins"
+                        Id = "richard-parkins",
+                        Firstname = "richard",
+                        Surname = "parkins"
                     }
                 });
 
@@ -60,7 +66,7 @@ namespace pact_consumer.tests
             Assert.Equal("richard", result.Firstname);
             Assert.Equal("parkins", result.Surname);
             
-            Assert.Equal("tester", result.Id);
+            Assert.Equal("richard-parkins", result.Id);
             
             _mockProviderService.VerifyInteractions();
         }

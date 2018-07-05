@@ -3,28 +3,33 @@
     "name": "Consumer"
   },
   "provider": {
-    "name": "Customer API"
+    "name": "Consumer API"
   },
   "interactions": [
     {
       "description": "A POST request to create a customer",
-      "providerState": "There is a something with id 'tester'",
+      "providerState": "There is a service",
       "request": {
         "method": "post",
         "path": "/customers",
         "query": "",
         "headers": {
           "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "id": null,
+          "firstname": "richard",
+          "surname": "parkins"
         }
       },
       "response": {
         "status": 201,
         "headers": {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json; charset=utf-8"
         },
         "body": {
-          "id": "tester",
-          "firstName": "richard",
+          "id": "richard-parkins",
+          "firstname": "richard",
           "surname": "parkins"
         }
       }
@@ -32,7 +37,7 @@
   ],
   "metadata": {
     "pactSpecification": {
-      "version": "1.0.0"
+      "version": "2.0.0"
     }
   }
 }

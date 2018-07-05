@@ -16,7 +16,7 @@ namespace pact_service
 
         [Route("{id}", Name ="Get")]
         [HttpGet]
-        public IActionResult Create(string id)
+        public IActionResult Get(string id)
         {
             try
             {
@@ -31,13 +31,13 @@ namespace pact_service
         }
         
         [HttpPost]
-        public IActionResult Create([FromBody] Customer customer)
+        public IActionResult Create([FromBody]Customer customer)
         {
             try
             {
                 var saved = _customers.Add(customer);
-            
-                return CreatedAtRoute("Get", new { id = saved.Id }, saved);
+
+                return CreatedAtRoute("Get", new {id = saved.Id}, saved);
             }
             catch (Exception ex)
             {

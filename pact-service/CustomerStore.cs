@@ -23,8 +23,10 @@ namespace pact_service
             {
                 throw new DuplicateNameException($"{key} already exists");
             }
-            
+             
             _customers.Add(key, customer);
+
+            customer.Id = key;
 
             return Task.FromResult(customer);
         }
@@ -38,7 +40,7 @@ namespace pact_service
         {
             public static string Generate(Customer customer)
             {
-                return $"{customer.Firstname}-${customer.Surname}";
+                return $"{customer.Firstname}-{customer.Surname}";
             }
         }
     }

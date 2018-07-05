@@ -6,7 +6,5 @@ services:
     container_name: "pact-consumer-tests"
     volumes:
       - .:/app
-    environment:
-      - PACT-SERVER=http://localhost
     working_dir: /app
     command: dotnet test "./pact-consumer.tests/pact-consumer.tests.csproj"

@@ -4,6 +4,8 @@ using System.Text;
 using System.Threading.Tasks;
 using domain;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using Newtonsoft.Json.Serialization;
 
 namespace pact_consumer
 {
@@ -36,7 +38,10 @@ namespace pact_consumer
             };
 
             var result = await client.PostAsync("/customers",
-                new StringContent(JsonConvert.SerializeObject(customer), Encoding.UTF8, "application/json"));
+                new StringContent(JsonConvert.SerializeObject(customer, new JsonSerializerSettings
+                {
+                    ContractResolver = new CamelCasePropertyNamesContractResolver()
+                }), Encoding.UTF8, "application/json"));
 
             if (result.IsSuccessStatusCode)
             {
