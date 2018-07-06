@@ -11,7 +11,7 @@ namespace pact_consumer
 {
     public interface IPactConsumer
     {
-        Task<Customer> CreateUser(string firstname, string surname);
+        Task<Uri> CreateUser(string firstname, string surname);
 
     }
     
@@ -24,7 +24,7 @@ namespace pact_consumer
             _host = host;
         }
 
-        public async Task<Customer> CreateUser(string firstname, string surname)
+        public async Task<Uri> CreateUser(string firstname, string surname)
         {
             var client = new HttpClient
             {
@@ -47,7 +47,7 @@ namespace pact_consumer
 
             if (result.IsSuccessStatusCode)
             {
-                return JsonConvert.DeserializeObject<Customer>(await result.Content.ReadAsStringAsync());
+                return result.Headers.Location;
             }
 
             throw new Exception(await result.Content.ReadAsStringAsync());

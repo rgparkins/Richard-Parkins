@@ -21,6 +21,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pact-service.tests", "pact-service.tests\pact-service.tests.csproj", "{84470A29-2776-4234-B220-31861F96A5A6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pacts", "pacts", "{8FEDF22B-96B9-4916-8273-0617365C63F2}"
+ProjectSection(SolutionItems) = preProject
+	pacts\consumer-consumer_api.json = pacts\consumer-consumer_api.json
+EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

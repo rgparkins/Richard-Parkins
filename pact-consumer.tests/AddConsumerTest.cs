@@ -47,7 +47,8 @@ namespace pact_consumer.tests
                     Status = 201,
                     Headers = new Dictionary<string, object>
                     {
-                        { "Content-Type", "application/json; charset=utf-8"}
+                        { "Content-Type", "application/json; charset=utf-8" },
+                        { "Location", "http://localhost:5000/customers/richard-parkins" }
                     },
                     Body = new Customer
                     {
@@ -63,10 +64,7 @@ namespace pact_consumer.tests
             var result = consumer.CreateUser("richard", "parkins").Result;
 
             //Assert
-            Assert.Equal("richard", result.Firstname);
-            Assert.Equal("parkins", result.Surname);
-            
-            Assert.Equal("richard-parkins", result.Id);
+            Assert.EndsWith("/customers/richard-parkins", result.ToString());
             
             _mockProviderService.VerifyInteractions();
         }

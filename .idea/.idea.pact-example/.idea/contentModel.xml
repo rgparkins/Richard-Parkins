@@ -4252,7 +4252,6 @@
         </e>
         <e p="logs" t="Include">
           <e p="consumer_api_mock_service.log" t="Include" />
-          <e p="customer_api_mock_service.log" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -6552,7 +6551,9 @@
         </e>
         <e p="pact-service.tests.csproj" t="IncludeRecursive" />
       </e>
-      <e p="pacts" t="Include" />
+      <e p="pacts" t="Include">
+        <e p="consumer-consumer_api.json" t="Include" />
+      </e>
       <e p="tests.sh" t="Include" />
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_pact-example.-818954311.00" t="ExcludeRecursive" />

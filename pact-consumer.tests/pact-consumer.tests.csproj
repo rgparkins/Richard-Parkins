@@ -26,4 +26,7 @@
   <ItemGroup>
     <ProjectReference Include="..\pact-consumer\pact-consumer.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="logs" />
+  </ItemGroup>
 </Project>
