@@ -66,7 +66,7 @@ namespace pact_service.tests
                     .ServiceProvider("Consumer API", serviceUri)
                     .HonoursPactWith("Consumer")
                     .PactUri(
-                        "http://localhost:32792/pacts/provider/Consumer%20API/consumer/Consumer/latest") //You can specify a http or https uri
+                        "http://Richards-MacBook-Pro-98861.local:32792/pacts/provider/Consumer%20API/consumer/Consumer/latest") //You can specify a http or https uri
                     .Verify();   
             }
         }
