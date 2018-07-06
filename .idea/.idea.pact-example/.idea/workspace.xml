@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="850f06c3-0245-4f8a-8727-7fe0bb0f3319" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/docker-compose-service-tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-service-tests.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pact-service.tests/AddUserTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pact-service.tests/AddUserTests.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/docker-compose-service-tests.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+              <caret line="9" column="64" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -89,21 +90,21 @@
       <file leaf-file-name="AddUserTests.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pact-service.tests/AddUserTests.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="68" column="64" selection-start-line="68" selection-start-column="64" selection-end-line="68" selection-end-column="64" />
+            <state relative-caret-position="635">
+              <caret line="72" column="30" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
               <folding>
-                <marker date="1530866110000" expanded="false" signature="6:214" ph="..." />
-                <marker date="1530866110000" expanded="true" signature="244:2162" ph="{...}" />
-                <marker date="1530866110000" expanded="true" signature="285:554" ph="{...}" />
-                <marker date="1530866110000" expanded="true" signature="397:447" ph="{...}" />
-                <marker date="1530866110000" expanded="true" signature="491:548" ph="{...}" />
-                <marker date="1530866110000" expanded="true" signature="589:2160" ph="{...}" />
-                <marker date="1530866110000" expanded="true" signature="702:752" ph="{...}" />
-                <marker date="1530866110000" expanded="true" signature="840:2154" ph="{...}" />
-                <marker date="1530866110000" expanded="true" signature="996:1216" ph="{...}" />
-                <marker date="1530866110000" expanded="true" signature="1062:1126" ph="{...}" />
-                <marker date="1530866110000" expanded="true" signature="1340:1481" ph="{...}" />
-                <marker date="1530866110000" expanded="true" signature="1573:2144" ph="{...}" />
+                <marker date="1530866403000" expanded="false" signature="6:214" ph="..." />
+                <marker date="1530866403000" expanded="true" signature="244:2296" ph="{...}" />
+                <marker date="1530866403000" expanded="true" signature="285:554" ph="{...}" />
+                <marker date="1530866403000" expanded="true" signature="397:447" ph="{...}" />
+                <marker date="1530866403000" expanded="true" signature="491:548" ph="{...}" />
+                <marker date="1530866403000" expanded="true" signature="589:2294" ph="{...}" />
+                <marker date="1530866403000" expanded="true" signature="702:752" ph="{...}" />
+                <marker date="1530866403000" expanded="true" signature="840:2288" ph="{...}" />
+                <marker date="1530866403000" expanded="true" signature="996:1216" ph="{...}" />
+                <marker date="1530866403000" expanded="true" signature="1062:1126" ph="{...}" />
+                <marker date="1530866403000" expanded="true" signature="1340:1481" ph="{...}" />
+                <marker date="1530866403000" expanded="true" signature="1743:2278" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -197,7 +198,6 @@
         <option value="$PROJECT_DIR$/pact-service/CustomerStore.cs" />
         <option value="$PROJECT_DIR$/pact-service/CustomerController.cs" />
         <option value="$PROJECT_DIR$/_tests-service.sh" />
-        <option value="$PROJECT_DIR$/docker-compose-service-tests.yml" />
         <option value="$PROJECT_DIR$/pact-service.tests/pact-service.tests.csproj" />
         <option value="$PROJECT_DIR$/pact-service/pact-service.csproj" />
         <option value="$PROJECT_DIR$/tests.sh" />
@@ -207,6 +207,7 @@
         <option value="$PROJECT_DIR$/_upload_to_broker.sh" />
         <option value="$PROJECT_DIR$/pacts/consumer-consumer_api.json" />
         <option value="$PROJECT_DIR$/pact-consumer.tests/AddConsumerTest.cs" />
+        <option value="$PROJECT_DIR$/docker-compose-service-tests.yml" />
         <option value="$PROJECT_DIR$/pact-service.tests/AddUserTests.cs" />
       </list>
     </option>
@@ -318,7 +319,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11467000" />
+    <option name="totallyTimeSpent" value="11714000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -331,6 +332,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1395" height="877" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32948717" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
@@ -340,9 +342,9 @@
       <window_info anchor="bottom" id="REST Client" order="7" weight="0.32948717" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32948717" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32948717" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32948717" />
       <window_info anchor="bottom" id="NuGet" order="7" weight="0.32948717" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2572062" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2572062" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32948717" />
       <window_info anchor="right" id="Database" order="3" />
@@ -592,18 +594,18 @@
         <state relative-caret-position="233">
           <caret line="65" column="64" lean-forward="true" selection-start-line="65" selection-start-column="64" selection-end-line="65" selection-end-column="64" />
           <folding>
-            <marker date="1530866110000" expanded="false" signature="6:214" ph="..." />
-            <marker date="1530866110000" expanded="true" signature="244:2162" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="285:554" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="397:447" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="491:548" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="589:2160" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="702:752" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="840:2154" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="996:1216" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="1062:1126" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="1340:1481" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="1573:2144" ph="{...}" />
+            <marker date="1530866403000" expanded="false" signature="6:214" ph="..." />
+            <marker date="1530866403000" expanded="true" signature="244:2296" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="285:554" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="397:447" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="491:548" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="589:2294" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="702:752" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="840:2288" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="996:1216" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="1062:1126" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="1340:1481" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="1743:2278" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -684,18 +686,18 @@
         <state relative-caret-position="840">
           <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
           <folding>
-            <marker date="1530866110000" expanded="false" signature="6:214" ph="..." />
-            <marker date="1530866110000" expanded="true" signature="244:2162" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="285:554" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="397:447" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="491:548" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="589:2160" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="702:752" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="840:2154" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="996:1216" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="1062:1126" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="1340:1481" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="1573:2144" ph="{...}" />
+            <marker date="1530866403000" expanded="false" signature="6:214" ph="..." />
+            <marker date="1530866403000" expanded="true" signature="244:2296" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="285:554" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="397:447" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="491:548" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="589:2294" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="702:752" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="840:2288" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="996:1216" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="1062:1126" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="1340:1481" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="1743:2278" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -865,13 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose-service-tests.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose-consumer-tests.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -903,23 +898,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose-service-tests.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="64" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pact-service.tests/AddUserTests.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="68" column="64" selection-start-line="68" selection-start-column="64" selection-end-line="68" selection-end-column="64" />
+        <state relative-caret-position="635">
+          <caret line="72" column="30" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
           <folding>
-            <marker date="1530866110000" expanded="false" signature="6:214" ph="..." />
-            <marker date="1530866110000" expanded="true" signature="244:2162" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="285:554" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="397:447" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="491:548" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="589:2160" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="702:752" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="840:2154" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="996:1216" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="1062:1126" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="1340:1481" ph="{...}" />
-            <marker date="1530866110000" expanded="true" signature="1573:2144" ph="{...}" />
+            <marker date="1530866403000" expanded="false" signature="6:214" ph="..." />
+            <marker date="1530866403000" expanded="true" signature="244:2296" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="285:554" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="397:447" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="491:548" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="589:2294" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="702:752" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="840:2288" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="996:1216" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="1062:1126" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="1340:1481" ph="{...}" />
+            <marker date="1530866403000" expanded="true" signature="1743:2278" ph="{...}" />
           </folding>
         </state>
       </provider>

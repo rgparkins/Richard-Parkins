@@ -6,5 +6,7 @@ services:
     container_name: "pact-service-tests"
     volumes:
       - .:/app
+    environment:
+      - BROKER_URI=http://Richards-MacBook-Pro-98861.local:32792
     working_dir: /app
     command: dotnet test "./pact-service.tests/pact-service.tests.csproj"

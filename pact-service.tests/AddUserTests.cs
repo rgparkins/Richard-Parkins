@@ -57,6 +57,9 @@ namespace pact_service.tests
                 })
                 .UseStartup<Startup>();
 
+            var brokerUri = Environment.GetEnvironmentVariable("BROKER_URI") ??
+                            "http://Richards-MacBook-Pro-98861.local:32792";
+            
             using (var service = builder.Start())
             {
                 //Act / Assert
@@ -66,8 +69,8 @@ namespace pact_service.tests
                     .ServiceProvider("Consumer API", serviceUri)
                     .HonoursPactWith("Consumer")
                     .PactUri(
-                        "http://Richards-MacBook-Pro-98861.local:32792/pacts/provider/Consumer%20API/consumer/Consumer/latest") //You can specify a http or https uri
-                    .Verify();   
+                        $"{brokerUri}/pacts/provider/Consumer%20API/consumer/Consumer/latest") //You can specify a http or https uri
+                    .Verify();
             }
         }
     }
